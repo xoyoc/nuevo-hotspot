@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Web para login de la empresa PC2000 Inc, en donde encontraras promociones y muchas sorpresas mas." />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>PC2000Inc</title>
+		<link rel="stylesheet" href="estilos/normalize.css">
+		<link rel="stylesheet" href="estilos/bootstrap.css">
+		<link rel="stylesheet" href="estilos/style.css">
+	</head>
+	<body>
+		<header>
+			<figure>
+				<img id="logotipo" class="img-responsive img-rounded" src="imagens/logo.jpeg" alt="PC2000 Inc" />
+			</figure>
+			<h1>PC2000 Inc</h1>
+			<form class="form-inline" action="">
+				<div class="form-group">
+					<input class="form-control" type="text" name="username" placeholder="Usuario" value="$(username)" required>
+					<input class="form-control" type="password" name="password" placeholder="Contraseña" required>
+					<input class="btn btn-primary" type="submit" value="ENTRAR">
+				</div>
+			</form>
+		</header>
+		<section>
+			<aside>
+				<p>Seccion de publicidad externa no propia del negocio</p>
+			</aside>
+			<div id="carusel" class="carousel slide" data-ride="carousel">
+			  	<!-- Indicadores del pie del carusel -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="3"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="4"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="5"></li>
+				</ol>
+				<!-- Carusel -->
+				<div class="carousel-inner">
+					<figure class="item active">
+						<img src="imagens/p_img1.png" alt="" />
+					</figure>
+					<figure class="item">
+						<img src="imagens/p_img2.jpg" alt="" />
+					</figure>
+					<figure class="item">
+						<img src="imagens/p_img3.png" alt="" />
+					</figure>
+					<figure class="item">
+						<img src="imagens/p_img4.png" alt="" />
+					</figure>
+					<figure class="item">
+						<img src="imagens/p_img5.png" alt="" />
+					</figure>
+					<figure class="item">
+						<img src="imagens/p_img6.png" alt="" />
+					</figure>										
+				</div>
+				<!-- Control de izquierda y derecha del carusel -->
+				<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left"></span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right"></span>
+				</a>
+			</div>
+			<div id="caja">
+				<article id="promocion">
+					<h4>Promociones</h4>
+					<p class="bg-success">Tenemos varios modelos de memorias, descuentos a nuestros suscriptores. </p>
+				</article>
+				<article id="paquetes">
+					<h4>Paquetes:</h4>
+					<p class="bg-success">Paq. 4 Personas  $250.00 Paq: 5 Personas $300.00 Paq. Celular: $100.00 Paq. Personal: $150.00</p>
+				</article>
+				<article id="aviso">
+					<h4>Avisos</h4>
+					<p class="bg-danger">Aviso importante</p>
+				</article>
+			</div>
+		</section>
+		<blockquote>
+			<footer>
+					<strong>Ven y visita nuestra oficina en calle Puerto 247 entre calle canal.</strong>
+			</footer>
+		</blockquote>
+		<script language="JavaScript" src="js/md5.js"></script>
+		<!-- jQuery (llamado de JQuery Bootstrap's JavaScript plugins) -->
+    	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    	<!-- Include all compiled plugins (below), or include individual files as needed -->
+    	<script src="js/bootstrap.min.js"></script>
+		<script language="JavaScript">
+			<!--
+			    function doLogin() {
+				document.sendin.username.value = document.login.username.value;
+				document.sendin.password.value = hexMD5('$(chap-id)' + document.login.password.value + '$(chap-challenge)');
+				document.sendin.submit();
+				return false;
+			    }
+			//-->
+		</script>
+		<script language="JavaScript">
+				<!--
+				  document.login.username.focus();
+				//-->
+		</script>
+	</body>
+</html>

@@ -1,0 +1,139 @@
+@import url(http://fonts.googleapis.com/css?family=Russo+One);
+
+body
+{
+	background: url("../imagens/fondo.png") no-repeat fixed center;
+	font-size: 16px;
+}
+
+header, section, footer
+{
+	background: rgba(231,231,231,.9);
+	border-radius: 1em;
+	margin: 1em auto;
+	width: 90%;
+	overflow: hidden;
+}
+
+header
+{
+	height: 8em;
+	position: relative;
+}
+
+section
+{
+	padding: 1em;
+}
+
+section aside
+{
+	background: green;
+	border-radius: 1em;
+	margin-left: 2em;
+	min-height: 350px;
+	padding: 1em;
+	width: 25%;
+	float: left;
+}
+
+section div article
+{
+	background: #dff0d8;
+	border:solid 2px;
+	border-radius: 1em;
+	padding: 1em;
+	margin: 1em;
+	min-height: 5em;
+}
+
+header form
+{
+	position: absolute;
+	float: right;
+	right: 1em;
+	bottom: 1em;
+}
+
+header h1, figure
+{
+	display: inline-block;
+}
+
+header h1
+{
+	color:red;
+	font-family: 'Russo One', sans-serif;
+	font-size: 3em;
+	margin: .8em 5em;
+	text-shadow: rgba(0,0,0,10) 5px 5px 10px;
+	top: 0;
+}
+
+footer
+{
+	margin: auto;
+	min-height: 3em;
+	padding: 1em;
+	width: 95%;
+}
+
+
+#promocion
+{
+	float: left;
+	width: 20%;
+	margin: 1em;
+	top: 0;
+}
+
+#paquetes
+{
+	display: inline-block;
+	margin: 1em 2em;
+	width: 30%;
+	top: 0;
+}
+
+#aviso
+{
+	background: #f2dede;
+	min-height: 5em;
+	width: 38%;
+	float: right;
+	top: 0;
+}
+
+#caja
+{
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+#carusel
+{
+	margin-right: 2em;
+	float: right;
+	width: 65%;
+}
+
+#logotipo
+{
+	position: absolute;
+	height: 130px;
+	width: 200px;
+	top: 0;
+}
+
+@media screen and (max-width: 480px){
+	header{height: 25em;}
+	header h1{display: none;}
+	header form{padding: .5em;position: relative;margin: 1em;width: 85%;}
+	header form div input{height: 2em; margin: .5em;}
+	header form div input[type="submit"]{font-size: 1.5em;margin: .5em;}
+	section aside{display: none;}
+	#promocion, #aviso, #paquetes{float: none;margin: 1em;left: 0;width: 95%;}
+	#carusel{display: none;}
+	#logotipo{position: relative;height: 220px;width: 380px;}
+}
